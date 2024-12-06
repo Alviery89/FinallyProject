@@ -1,20 +1,17 @@
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.finallyproject.Movie
+import com.example.finallyproject.MoviesAdapter
 import com.example.finallyproject.R
+
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        data class Movie(
-            val title: String,       // Title of the movie
-            val description: String, // Short description or synopsis
-            val posterUrl: String,   // URL of the movie poster image
-            val trailerUrl: String   // URL of the movie trailer video
-        )
 
 
         val movies = listOf(

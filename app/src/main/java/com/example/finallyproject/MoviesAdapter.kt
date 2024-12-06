@@ -1,6 +1,6 @@
+package com.example.finallyproject
 import android.content.Context
 import android.content.Intent
-import android.graphics.Movie
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +9,9 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.finallyproject.R
 import com.squareup.picasso.Picasso
 
-class MoviesAdapter(private val context: Context, private val movies: List<Movie>) :
+class MoviesAdapter(private val context: Context, private val movies: List<com.example.finallyproject.Movie>) :
     RecyclerView.Adapter<MoviesAdapter.MovieViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
